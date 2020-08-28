@@ -160,25 +160,9 @@
 			}
 		}
 
-		function mouseUpFunction(e) {
-
-			var nav = document.getElementById("nav");
-			var togglebutton = document.getElementById("nav-toggle-button");
-
-			if ((togglebutton.className.includes("nav-toggle-visible")) && (!nav.is(e.target)) && (nav.has(e.target).length < 1)) {
-
-				toggleNav();
-
-			}
-
-		}
-
 		windowResizeFunction();
 
 		window.onresize = windowResizeFunction;
-		document.addEventListener('mouseup', e => windowResizeFunction(e));
-
-
 
 		</script>
 	</body>
