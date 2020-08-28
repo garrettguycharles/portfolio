@@ -293,7 +293,7 @@ ul ul {
   color: white;
   align-items: stretch;
   height: auto;
-
+  min-height: 200px;
 
 }
 
@@ -302,6 +302,7 @@ ul ul {
   max-height: 50px;
   width: auto;
   filter: brightness(0) invert(1);
+  margin: 0.5rem;
 
 
 }
