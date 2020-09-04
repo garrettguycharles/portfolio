@@ -53,6 +53,7 @@ body, html {
 
   font-size: 16px;
   height: 100%;
+  width: 100%;
 
 }
 
@@ -81,12 +82,8 @@ p:last-of-type {
 
 }
 
-body, .header {
-
-  width: 100%;
-}
-
 .header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
