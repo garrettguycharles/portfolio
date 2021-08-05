@@ -1,169 +1,196 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="styles.css"/>
-		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Questrial'>
-		<script src="https://kit.fontawesome.com/45fda6db51.js" crossorigin="anonymous"></script>
-		<title>Garrett's Portfolio</title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ce22f167aa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Garrett Charles</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="site-title">
+        <div>
+          garrett charles
+        </div>
+      </div>
 
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+      <div id="header-logo-wrapper">
+        <img src="/images/gc_powerbuttonlogo_400x400.png" alt="logo">
+      </div>
+      <div class="social-links">
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </header>
 
-	</head>
+    <div class="content">
+      <div class="hero" id="main-hero">
+        <div class="hero-background">
+          <div class="hero-content">
+            <div class="hero-title">
+              <span>
+                this is me.
+              </span>
 
-	<body>
-		<div class="page">
-			<div class="section header">
-				<div class="flex-spacer"></div>
-				<div id="header-site-name">
-					<img id="header-logo" src="/images/gc_powerbuttonlogo_withtext.png">
-				</div>
-				<div id="header-links" class="section header-links">
-					<div></div>
-					<div id="social-links">
-						<a href="tel:7204325329"><i class="fas fa-phone-alt"></i></a>
-						<a href="mailto:gcharles@byu.edu"><i class="far fa-envelope"></i></a>
-						<a href="https://github.com/garrettguycharles" target="_blank"><i class="fab fa-github"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="section nav" id="nav">
-				<div class="nav toggle-button" onclick="toggleNav()">
-					<i id="nav-toggle-button" class="fas fa-bars"></i>
-				</div>
-				<div class="section nav nav-links" id="nav-links">
-					<ul>
-						<a href="/"><li>Home</li></a>
-					</ul>
-					<ul>
-						<a href="#about-me"><li>About Me</li></a>
-						<a href="#projects"><li>Projects</li></a>
-						<a href="#experience"><li>Experience</li></a>
-						<a href="#contact"><li>Contact</li></a>
-						<a href="/"><li>subscribe</li></a>
-					</ul>
-				</div>
+            </div>
+            <div class="hero-subtitle">
+              I'm a computer scientist.  Although computer "enthusiast" might be more accurate.
+            </div>
 
-			</div>
+            <div class="hero-description-title">
+              <span>i've got skills.</span>
+            </div>
 
+            <div class="hero-description">
+              <ul style="padding-left: 0">
+                <li>Front and back-end web design</li>
+                <li>Server administration</li>
+                <li>Mobile app development</li>
+                <li>Game development</li>
+                <li>3D Modeling / Animation</li>
+                <li>Sound design</li>
+              </ul>
+            </div>
 
-			<div id="page-heading-wrapper"><h1>Portfolio</h1></div>
+          </div>
+        </div>
+      </div>
 
-			<br>
-			<div class="section body-info-box" id="about-me">
-				<div class="body-info-heading-wrapper">
-					<h2>About Me</h2>
-				</div>
-				<div class="body-info-text-wrapper">
-					<div>
-						<p>I love to code.  The power that computers have is astronomical, and being able to control that power is exhilarating.</p>
+      <div class="section">
+        <div class="section-content">
+          <div class="spotlight">
 
-						<p>This is an added paragraph to practice syncing my files through Github to update the website.</p>
-				</div>
-				</div>
-			</div>
-			<br>
+            <div class="spotlight-column">
+              <div class="spotlight-column-title">
+                <span>Work Experience</span>
+              </div>
+              <div class="spotlight-column-content">
+                <div class="spotlight-column-content-item">
+                  <span class="item-heading">Juni Learning, Inc.</span>
+                  <small class="item-subheading">2020-Present</small>
+                  <p><span class="spotlight-item-point">Job Title:</span>  Instructor</p>
+                  <p>
+                    <span class="spotlight-item-point">what I do:</span>
+                    I teach computer science to students ages 8 to 19.
+                  </p>
 
-			<div class="section body-info-box" id="projects">
-				<div class="body-info-heading-wrapper">
-					<h2>Projects</h2>
-				</div>
-				<div class="body-info-text-wrapper">
-					<ul>
-						<li>Select Breakers Listing Assistant (2019)</li>
-						<li>Select Breakers Filename Assistant (2019)</li>
-						<a href="http://store.selectbreakers.com"><li>selectbreakers.com (2020)</li></a>
-					</ul>
-				</div>
-			</div>
+                  <span class="spotlight-item-point">Skills I Teach:</span>
 
-			<br>
-
-			<div class="section body-info-box" id="experience">
-				<div class="body-info-heading-wrapper">
-					<h2>Experience</h2>
-				</div>
-				<div class="body-info-text-wrapper">
-					<ul>
-						<li>Employee at Select Breakers, LLC.
-							<ul>
-								<li>Image Manipulation Consultant, since 2015</li>
-								<li>Technological Consultant, since September 2019</li>
-								<li>Webmaster, since May 2020</li>
-							</ul>
-						</li>
-
-					</ul>
-				</div>
-			</div>
-			<br>
-
-			<div class="section body-info-box" id="contact">
-				<div class="body-info-heading-wrapper">
-					<h2>Contact</h2>
-				</div>
-				<div class="body-info-text-wrapper">
-					<ul>
-
-						<li>Email: <a href="mailto:gcharles@byu.edu">gcharles@byu.edu</a></li>
-						<li>Phone: <a href="tel:7204325329">(720) 432-5329</a></li>
-						<li>Github: <a href="https://github.com/garrettguycharles">garrettguycharles</a></li>
-
-					</ul>
-				</div>
-			</div>
-			<div class="section footer">
-				<div id="footer-container-first"></div>
-				<div id="footer-container-center">
-					<!--<div style="height: 300px;"></div> for testing-->
-					<img id="footer-logo" src="/images/gc_powerbuttonlogo_withtext.png">
-					<div id="footer-copyright">© 2020 Garrett Charles</div>
-				</div>
-
-				<div id="footer-container-last"></div>
+                  <div class="language-logo">
+                    <img src="/images/scratch_logo.png" alt="">
+                  </div>
 
 
-			</div>
-		</div>
+                  <ul class="ul-nostyle-center">
+                    <li>Basic Coding Concepts</li>
+                    <li>Game Development</li>
 
-		<script type="text/javascript">
+                  </ul>
 
-		function toggleNav() {
-			var navLinks = document.getElementById("nav-links");
-			var togglebutton = document.getElementById("nav-toggle-button");
-
-			togglebutton.classList.toggle("nav-toggle-visible");
-			navLinks.classList.toggle("nav-links-hidden");
-		}
-
-		function windowResizeFunction() {
-			//make sure states are in sync
-		  var navLinks = document.getElementById("nav-links");
-			var togglebutton = document.getElementById("nav-toggle-button");
-
-			if (togglebutton.className.includes("nav-toggle-visible")) {
-				if (navLinks.className.includes("nav-links-hidden")) {
-					navLinks.classList.toggle("nav-links-hidden");
-				}
-			} else if (!(togglebutton.className.includes("nav-toggle-visible"))) {
-				if (!(navLinks.className.includes("nav-links-hidden"))) {
-					navLinks.classList.toggle("nav-links-hidden");
-				}
-			}
+                  <div class="language-logo">
+                    <img src="/images/python_logo.png" alt=""><strong>python</strong>
+                  </div>
 
 
+                  <ul class="ul-nostyle-center">
+                    <li>(Turtle) Procedural Graphics</li>
+                    <li>Problem Solving Algorithms</li>
+                    <li>(PyGame) Game Development</li>
+                    <li>Advanced Algorithms</li>
+                    <li>Artificial Intelligence</li>
 
-			if ((window.innerWidth <= 801) && (togglebutton.className.includes("nav-toggle-visible"))) {
-				toggleNav();
-			} else if ((window.innerWidth > 801) && (!(togglebutton.className.includes("nav-toggle-visible")))) {
-				toggleNav();
-			}
-		}
+                  </ul>
 
-		windowResizeFunction();
+                  <div class="language-logo">
+                    <img src="/images/html_css_js_logo.png" alt="">
+                  </div>
 
-		window.onresize = windowResizeFunction;
+                  <ul class="ul-nostyle-center">
 
-		</script>
-	</body>
+                    <li>Front-End Web Development</li>
+
+                  </ul>
+
+                  <p class="spotlight-item-point">Skills Learned:</p>
+
+                  <ul>
+                    <li>Teaching effectively</li>
+                    <li>Fostering self-reliance in others</li>
+                    <li>Project leadership</li>
+                    <li>Clear explanation of advanced concepts</li>
+                    <li>Remote Collaboration (Zoom, Slack)</li>
+                    <li>Effective, efficient debugging</li>
+                  </ul>
+
+                </div>
+
+
+              </div>
+
+              <div class="spotlight-column-bottom-button">
+                <span>
+                  View Experience
+                </span>
+              </div>
+            </div>
+
+
+            <div class="spotlight-column">
+              <div class="spotlight-column-title">
+                <span>Languages I Speak</span>
+              </div>
+              <div class="spotlight-column-content">
+                <canvas id="languages-canvas" width="300" height="300"></canvas>
+                <div class="spotlight-column-content-item center-vert">
+                  <div class="dark-background-wrapper">
+                    <ul class="ul-nostyle-center" style="font-size: 2rem;">
+                      <li>Python</li>
+                      <li>C</li>
+                      <li>C++</li>
+                      <li>Java</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Javascript</li>
+                      <li>SQL</li>
+                      <li>VueJS</li>
+                      <li>Linux Bash</li>
+                      <li>Windows Terminal</li>
+                      <li>Assembly</li>
+                      <li>MongoDB</li>
+                      <li>Nginx Server</li>
+                      <li>Github</li>
+
+
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="spotlight-column">
+              <div class="spotlight-column-title">
+                <span>Recent Projects</span>
+              </div>
+              <div class="spotlight-column-content">
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </body>
+  <script src="/js/main.js" charset="utf-8"></script>
 </html>
