@@ -107,20 +107,20 @@ class Item {
   }
 }
 
-let logo = new Item("gc_powerbuttonlogo_100x100.png");
-let pylogo = new Item("python_logo.png");
-let atom_logo = new Item("atom_icon.png");
-let android_logo = new Item("android_logo.png");
-let chrome_logo = new Item("chrome_logo.png");
-let code_logo = new Item("code_icon.png");
-let cpp_logo = new Item("cpp_logo.png");
-let css_logo = new Item("css_logo.png");
-let html_logo = new Item("html_logo.png");
-let java_logo = new Item("java_logo.png");
-let js_logo = new Item("js_logo.png");
-let nginx_logo = new Item("nginx_logo.png");
-let scratch_logo = new Item("scratch_logo.png");
-let ubuntu_logo = new Item("ubuntu_logo.png");
+new Item("gc_powerbuttonlogo_100x100.png");
+new Item("python_logo.png");
+new Item("atom_icon.png");
+new Item("android_logo.png");
+new Item("chrome_logo.png");
+new Item("code_icon.png");
+new Item("cpp_logo.png");
+new Item("css_logo.png");
+new Item("html_logo.png");
+new Item("java_logo.png");
+new Item("js_logo.png");
+new Item("nginx_logo.png");
+new Item("scratch_logo_item.png");
+new Item("ubuntu_logo.png");
 new Item("sql_logo.png");
 
 function draw() {
@@ -129,6 +129,10 @@ function draw() {
   for (let it of all_logos) {
     it.draw();
   }
+
+
+  ctx.fillStyle = "#ffffffdd";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 function update() {

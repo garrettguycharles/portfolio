@@ -284,7 +284,7 @@ ul {
 }
 
 #main-hero {
-  background-image: url('/images/forest.jpg');
+  background-image: url('/images/desk_laptop.jpg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -295,11 +295,41 @@ ul {
   justify-content: center;
 }
 
+.fullwidth {
+  width: 100%;
+}
+
 .dark-background-wrapper {
   background-color: #00000099;
   color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 #00000099;
+}
+
+.light-background-wrapper {
+  background-color: #ffffff99;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #ebebeb;
+}
+
+.button {
+  align-self: center;
+  border-radius: 5px;
+  background-color: var(--theme-color-primary);
+  color: white;
+}
+
+.button:hover {
+  background-color: var(--theme-color-primary-dark);
+}
+
+.button a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  height: 2rem;
+  color: white;
 }
 
 .language-logo {
@@ -324,6 +354,40 @@ ul {
   left: 0;
   top: 0;
   z-index: 45;
+}
+
+.project-preview-mobile {
+  height: 256px;
+  object-fit: contain;
+}
+
+.v-space {
+  width: 100%;
+  height: 1rem;
+}
+
+.spotlight-recent-project-links {
+  display: grid;
+  grid-template: 1fr / 2fr 1fr;
+}
+
+.spotlight-recent-project-links a {
+  text-align: center;
+  margin: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--theme-color-primary);
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.spotlight-recent-project-links a:hover {
+  background-color: var(--theme-color-primary-dark);
+}
+
+
+.spotlight-recent-project-description {
+  padding: 1rem 0;
 }
 
 @media only screen and (max-width: 600px) {
