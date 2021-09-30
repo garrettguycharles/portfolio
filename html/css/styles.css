@@ -257,6 +257,7 @@ ul {
 
 .spotlight-column-content {
   min-height: 300px;
+  max-width: 400px;
   width: 100%;
   height: 100%;
   display: flex;
