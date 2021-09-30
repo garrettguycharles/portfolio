@@ -679,6 +679,10 @@ ul {
     margin-bottom: 1rem;
   }
 
+  .card-container > .spotlight-column {
+    width: 100%;
+  }
+
   .language-list {
     font-size: 1.5rem;
   }
