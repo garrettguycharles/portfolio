@@ -205,6 +205,11 @@ ul {
   z-index: 99999;
 }
 
+.no-side-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .spotlight-column {
   border-radius: 10px;
   border: 2px solid #ebebeb;
