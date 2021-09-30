@@ -171,6 +171,11 @@ ul {
   justify-content: center;
 }
 
+#recent_projects {
+  margin-top: -3rem;
+  padding-top: 3rem;
+}
+
 .section {
   width: 100%;
   min-height: 300px;
@@ -197,6 +202,7 @@ ul {
   padding: 1rem 0.5rem;
   background-color: white;
   border-radius: 10px;
+  z-index: 99999;
 }
 
 .spotlight-column {
@@ -478,7 +484,7 @@ ul {
 
 .header-line-through {
   border-top: 2px solid #ebebeb;
-  margin: 3rem;
+  margin: 3rem 0;
 }
 
 .header-line-through > span {
@@ -498,27 +504,94 @@ ul {
   color: black;
 }
 
+.white {
+  background-color: white;
+}
+
 .white-text {
   color: white;
+}
+
+.primary-color-darkest-text {
+  color: var(--theme-color-primary-darkest);
+}
+
+.card-container {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.card-content-button {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  background-color: var(--theme-color-primary);
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  max-width: 90%;
-  width: 90vw;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;;
   margin: 0 auto;
-
-  display: flex;
   background-color: white;
   border-radius: 10px;
   color: black;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem;
 }
 
 .card-title {
   text-align: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+
+.card-text {
+  padding: 0.5rem;
+  text-align: justify;
+}
+
+.card-button {
+  background: var(--theme-color-primary-dark);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5rem 0;
+  width: 60%;
+  color: #ebebeb;
+  font-weight: bold;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -604,6 +677,10 @@ ul {
   .language-list {
     font-size: 1.5rem;
   }
+
+  .card-container {
+    grid-template: 1fr / repeat(2, 1fr);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -625,6 +702,10 @@ ul {
 
   #footer-copyright {
     text-align: center;
+  }
+
+  .card-container {
+    grid-template: 1fr / repeat(1, 1fr);
   }
 }
 
